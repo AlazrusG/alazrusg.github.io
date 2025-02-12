@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Testing css fades */
+        @keyframes fadeIn {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+        body {
+            background: linear-gradient( rgba(30, 31, 49, 0.7), rgba(0, 0, 0, 0.7) ), url('images/background.png') no-repeat center center/cover;
+            color: #2b2830;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            animation: fadeIn 0.8s ease-in-out;
+            background: rgba(211, 211, 211, 0.9);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            height: 45%;
+            width: 60%;
+        }
+
+        .divider-container {
+            display: flex;
+            justify-content: space-evenly;  /* Distribute icons evenly */
+            align-items: center;           /* Vertically center items */
+            padding: 10px;
+        }
+          
+        .icon-link img {
+            width: 20px;   /* Adjust the icon size */
+            height: auto;  /* Maintain aspect ratio */
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .portrait {
+            width: auto;
+            height: 100%;
+            min-height: 10rem;
+            border-radius: 12px;
+            margin-right: 3rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .contentleft {
+            text-align: center;
+            width: 100%;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .bio {
+            font-size: 14px;
+            font-weight: 300;
+            margin: 10px 0;
+            opacity: 0.8;
+            color: #333;
+        }
+        /* Links class for testing the hover effect. */
+        .links a {
+            display: block;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 5px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            width: 100%;
+        }
+        @media (max-aspect-ratio: 1/1) {
+            .container {
+                animation: fadeIn 0.8s ease-in-out;
+                flex-direction: column;
+                height: auto;
+                width: 50%;
+                min-width:321px;
+                padding: 30px;
+            }
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .portrait {
+                width: auto;
+                height: 19rem;
+                border-radius: 12px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+                /* The fade-in animation */
+        }
+                /* Gallery Specific CSS */
+        
+                .art-container {
+                    background: rgba(211, 211, 211, 0.9);
+                    border-radius: 12px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    height: 100%;
+                    width: 60%;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        
+                }
+        
+                .art-content {
+                    background: rgba(211, 211, 211, 0.9);
+                    border-radius: 12px;
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    padding: 20px
+                }
+        
+                .art-content img {
+                    width: 200px;
+                    height: auto;
+                    object-fit: cover;
+                    aspect-ratio: 3 / 4; /* Portrait aspect ratio */
+                    border-radius: 8px;
+                }
+        
+                .full-image img {
+                    width: 20%
+                }
+        
