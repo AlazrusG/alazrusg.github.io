@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const gallery = document.getElementById("art-gallery");
     const imageFolder = "gallery/"; // Change this to your actual image folder path
-    const imageCount = 9; // Adjust based on the number of images available // TODO Will change to adjust to gallery folder
+    const imageCount = 9; // Adjust based on the number of images available // TODO Will change to adjust to gallery folder using node
     
     for (let i = 1; i <= imageCount; i++) {
         const img = document.createElement("img");
@@ -38,9 +38,11 @@ function showFullImage(src) {
     
     const img = document.createElement("img");
     img.src = src;
-    img.classList.add("full-image");  //TODO fix scale for portraits
-    img.style.width = "70vw";
-    img.style.height = "auto";
+    img.classList.add("full-image");
+    img.style.width = "auto";
+    img.style.maxHeight = "75vh";
+    img.style.maxWidth = "100%"
+
     
     container.appendChild(img);
     modal.appendChild(container);

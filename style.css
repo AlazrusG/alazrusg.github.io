@@ -129,6 +129,7 @@
                 /* Gallery Specific CSS */
         
                 .art-container {
+                    animation: fadeIn 0.8s ease-in-out;
                     background: rgba(211, 211, 211, 0.9);
                     border-radius: 12px;
                     display: grid;
@@ -142,6 +143,7 @@
                 }
         
                 .art-content {
+                    animation: fadeIn 0.8s ease-in-out;
                     background: rgba(211, 211, 211, 0.9);
                     border-radius: 12px;
                     position: relative;
