@@ -128,20 +128,6 @@
         }
                 /* Gallery Specific CSS */
         
-                .art-container {
-                    animation: fadeIn 0.8s ease-in-out;
-                    background: rgba(211, 211, 211, 0.9);
-                    border-radius: 12px;
-                    display: grid;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 20px;
-                    height: 100%;
-                    width: 60%;
-                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        
-                }
-        
                 .art-content {
                     animation: fadeIn 0.8s ease-in-out;
                     background: rgba(211, 211, 211, 0.9);
@@ -149,7 +135,7 @@
                     position: relative;
                     overflow: hidden;
                     width: 100%;
-                    padding: 20px
+                    padding: 20px;
                 }
         
                 .art-content img {
