@@ -95,7 +95,7 @@
             font-size: 16px;
             font-weight: 400;
             text-align: center;
-            width: 100%;
+            width: 120%;
         }
         @media (max-aspect-ratio: 1/1) {
             .container {
