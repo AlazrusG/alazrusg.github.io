@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const gallery = document.getElementById("art-gallery");
-    const imageFolder = "gallery/"; // Change this to your actual image folder path
+    const gallery = document.getElementById("gallery");
+    const imageFolder = "gallery/"; // Image Folder Path
     const imageCount = 9; // Adjust based on the number of images available // TODO Will change to adjust to gallery folder using node
     
     for (let i = 1; i <= imageCount; i++) {
+        const fig = document.createElement("figure");
         const img = document.createElement("img");
         img.src = `${imageFolder}art${i}.png`; // Based on file extension PNG by default
         img.alt = `Artwork ${i}`;
@@ -13,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             showFullImage(img.src);
         });
         
-        gallery.appendChild(img);
+        gallery.appendChild(fig)
+        fig.appendChild(img);
     }
 });
 

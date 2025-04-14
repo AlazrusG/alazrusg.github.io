@@ -134,7 +134,8 @@
                     border-radius: 12px;
                     position: relative;
                     overflow: hidden;
-                    width: 100%;
+                    align-items: center;
+                    width: 90%;
                     padding: 20px;
                 }
         
